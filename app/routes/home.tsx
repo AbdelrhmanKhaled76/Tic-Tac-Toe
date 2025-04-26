@@ -55,7 +55,7 @@ export default function Home() {
   }
   return (
     <>
-      <h1 className="text-center pt-20 text-[40px] text-white">
+      <h1 className="text-center pt-20 text-[25px] md:text-[40px] text-white">
         Welcome to my Tic Tac Toe game
       </h1>
       <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex justify-center items-center  ">
@@ -78,7 +78,7 @@ export default function Home() {
                 winningPositions[winningPosIdx]?.includes(idx);
               return (
                 <div
-                  className={`transition-all duration-500 w-32 h-32 border border-black flex justify-center items-center text-5xl font-bold font-mono  ${
+                  className={`transition-all duration-500 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 border border-black flex justify-center items-center text-2xl md:text-5xl font-bold font-mono  ${
                     isWinningCell
                       ? "bg-green-400 text-white rotate-y-360"
                       : board[idx]
