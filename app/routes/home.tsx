@@ -94,7 +94,7 @@ export default function Home() {
             })}
           </div>
           <div className="flex justify-center items-center">
-            {ending ? (
+            {ending || roundes === 9 ? (
               <button
                 className="border p-3 rounded cursor-pointer hover:bg-white transition-colors duration-500"
                 type="button"
