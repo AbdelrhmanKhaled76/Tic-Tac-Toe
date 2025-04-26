@@ -4,7 +4,9 @@ import type { Route } from "./+types/home";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Tic Tac Toe game" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "Welcome to my Tic Tac Toe game!" },
+    { author: "abdelrhman khaled" },
+    { keywords: ["nextjs", "react", "typeScript"] },
   ];
 }
 
